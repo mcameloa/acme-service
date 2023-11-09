@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  endpoint: MyString
+  created_at: 2023-11-03 20:57:43
+
+two:
+  user_id: 1
+  endpoint: MyString
+  created_at: 2023-11-03 20:57:43

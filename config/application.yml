@@ -1,4 +1,4 @@
 POSTGRES_USER: "user"
 POSTGRES_PASSWORD: "password"
 
-MAX_HITS: 10
+MAX_HITS: "10"

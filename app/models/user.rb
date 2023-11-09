@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# User class definition.
 class User < ApplicationRecord
   include Devise::JWT::RevocationStrategies::JTIMatcher
   # Include default devise modules. Others available are:
@@ -5,5 +8,5 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :jwt_authenticatable, jwt_revocation_strategy: self
-  has_many :hits
+  has_many :hits, dependent: :destroy
 end

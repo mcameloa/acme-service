@@ -1,0 +1,11 @@
+# frozen_string_literal: true
+
+# spec/factories/users.rb
+FactoryBot.define do
+  factory :user do
+    sequence(:email) { |n| "user#{n}@example.com" }
+    password { 'password' }
+    password_confirmation { 'password' }
+    time_zone { 'Europe/Athens' }
+  end
+end

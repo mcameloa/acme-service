@@ -1,4 +1,5 @@
 POSTGRES_USER: "user"
 POSTGRES_PASSWORD: "password"
+DEVISE_JWT_SECRET_KEY: "secret"
 
 MAX_HITS: "10"

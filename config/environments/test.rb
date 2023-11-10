@@ -63,4 +63,6 @@ Rails.application.configure do
 
   # Raise error when a before_action's only/except options reference missing actions
   config.action_controller.raise_on_missing_callback_actions = true
+
+  Rails.application.credentials.devise_jwt_secret_key = ENV['DEVISE_JWT_SECRET_KEY']
 end

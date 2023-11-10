@@ -7649,7 +7649,7 @@
 
             
 
-            <code class="ruby">    jwt.secret = Rails.application.credentials.devise_jwt_secret_key!</code>
+            <code class="ruby">    jwt.secret = ENV[&#39;DEVISE_JWT_SECRET_KEY&#39;]</code>
           </li>
         </div>
       
